@@ -1,0 +1,42 @@
+.ns-strips {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0; }
+
+.ns-strips div {
+  height: 25px;
+  flex-grow: 1; }
+
+.ns-strips div:nth-child(1) {
+  background-color: #ddb109; }
+
+.ns-strips div:nth-child(2) {
+  background-color: #a0c636; }
+
+.ns-strips div:nth-child(3) {
+  background-color: #0084b6; }
+
+.ns-strips div:nth-child(4) {
+  background-color: #45237a; }
+
+.ns-strips div:nth-child(5) {
+  background-color: #c40063; }
+
+.ns-strips div:nth-child(6) {
+  background-color: #d3611d; }
+
+.ns-strips div:nth-child(7) {
+  background-color: #241f20; }
+
+.reveal section img.brand-logo {
+  background: none;
+  border: none;
+  box-shadow: none; }
+
+.reveal .slide-background {
+  background-color: #2C2C2C; }
+
+.reveal.center, .reveal.center .slides, .reveal.center .slides section {
+  color: #FFF; }

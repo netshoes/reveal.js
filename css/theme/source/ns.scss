@@ -1,0 +1,12 @@
+@import "./ns/strips";
+@import "./ns/brand-logo";
+// @import "./ns/progress";
+
+.reveal .slide-background {
+  // background-color: #370F53;
+  background-color: #2C2C2C;
+}
+
+.reveal.center, .reveal.center .slides, .reveal.center .slides section {
+  color: #FFF;
+}
