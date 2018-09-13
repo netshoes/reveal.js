@@ -34,6 +34,21 @@
 						<p>O projeto AMP é uma iniciativa de código aberto com o objetivo de criar uma Web melhor para todos. O projeto possibilita a criação de websites e anúncios rápidos, atraentes e de alto desempenho em vários dispositivos e plataformas de distribuição.</p>
 					</section>
 					<section>
+						<h2>Mas por quê usar AMP?</h2>
+						<p style="font-size:1rem">A velocidade de uma página da Web melhora a experiência do usuário e as <a href="https://www.doubleclickbygoogle.com/articles/mobile-speed-matters/">principais métricas de negócios</a>. As páginas AMP são carregadas quase instantaneamente. Isso permite oferecer uma experiência rápida e consistente em todos os dispositivos e plataformas com links para páginas AMP, incluindo Google, Bing, LinkedIn e muito mais. Esses ganhos de desempenho geralmente causam melhorias em valores importantes, como o tempo gasto na página, as visitas de retorno e a CTR.</p>
+					</section>
+					<section>
+						<h2>Como?</h2>
+						<ul>
+							<li title="Geralmente, as páginas AMP são carregadas em menos de um segundo">Mantenha sua audiência engajada</li>
+							<li title="As conversões caem 12% para cada segundo extra que uma página leva para carregar">Maximize sua receita</li>
+							<li title="A adoção do formato AMP permite que você mantenha sua própria marca e suas ferramentas">Mantenha a flexibilidade e o controle</li>
+							<li title="Criar páginas AMP é simples e direto">Reduza a complexidade nas suas operaões</li>
+							<li title="As páginas AMP podem ser construídas uma vez e distribuídas em uma ampla variedade de plataformas de distribuição simultaneamente.">Maximize sei ROI</li>
+							<li title="O projeto AMP é uma iniciativa de código aberto para proteger o futuro da Web ao ajudar todos os sites a oferecer uma experiência do usuário melhor e mais rápida.">Desenvolva para um futuro sustentável</li>
+						</ul>
+					</section>
+					<section>
 						<p>Modelo de HTML para AMP</p>
 						<pre>
 							<code data-trim data-noescape>
@@ -76,7 +91,7 @@
 					</section>
 					<section>
 						<h2>Marcação obrigatória</h2>
-						<ol>
+						<ol style="font-size:1rem;">
 							<li>Ser iniciados pelo doctype &lt;!doctype html&gt;.</li>
 							<li>Conter uma tag &lt;html ⚡&gt; de n&iacute;vel superior (&lt;html amp&gt; tamb&eacute;m &eacute; aceita).</li>
 							<li>Conter as tags &lt;head&gt; e &lt;body&gt; (elas s&atilde;o opcionais em HTML).</li>
@@ -88,11 +103,60 @@
 						</ol>
 					</section>
 				</section>
+				<section>
+					<section>
+						<h2>SEO</h2>
+					</section>
+					<section>
+						<h3>Páginas vinculadas com um link&lt;&gt;</h3>
+						<p>Adicione o seguinte à página não AMP:</p>
+						<pre>
+							<code data-trim data-noescape>
+							 &lt;link rel=&quot;amphtml&quot; href=&quot;https://www.example.com/url/to/amp/document.html&quot;&gt;
+							</code>
+						</pre>
+					</section>
+					<section>
+						<p>Adicione isto à página AMP:</p>
+						<pre>
+							<code data-trim data-noescape>
+							 &lt;link rel=&quot;canonical&quot; href=&quot;https://www.example.com/url/to/full/document.html&quot;&gt;
+							</code>
+						</pre>
+					</section>
+					<section>
+						<h3>E se eu só tiver uma página?</h3>
+						<p>Se você só tiver uma página, e essa página for AMP, ainda assim deverá adicionar o link canônico a ela, mas ele simplesmente apontará para a própria página:</p>
+						<pre>
+							<code data-trim data-noescape>
+							 &lt;link rel=&quot;canonical&quot; href=&quot;https://www.example.com/url/to/amp/document.html&quot;&gt;
+							</code>
+						</pre>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Estilizando os componentes</h2>
+					</section>
+					<section>
+						<p>O estilo e o layout nas páginas AMP em HTML são muito semelhantes aos de páginas HTML normais. Nos dois casos, você usará CSS.</p>
+					</section>
+				</section>
+				<section>
+					<h2>Tendências</h2>
+					<a href="https://www.ampproject.org/pt_br/stories/">AMP stories</a>
+				</section>
 
 
-
-
-				<section>Slide 3</section>
+				<section>
+					<h2>Links úteis</h2>
+					<ul>
+						<li><a href="https://developers.google.com/web/tools/setup/">Fundamentos</a></li>
+						<li><a href="https://www.ampproject.org/pt_br/learn/showcases/">Showcase</a></li>
+						<li><a href="https://www.ampproject.org/pt_br/learn/case-studies/">Casos de sucesso</a></li>
+						<li><a href="https://validator.ampproject.org/">Validator</a></li>
+					</ul>
+				</section>
 				<section>Slide 3</section>
 			</div>
 		</div>
