@@ -30,10 +30,14 @@
 .ns-strips div:nth-child(7) {
   background-color: #241f20; }
 
-.reveal section img.brand-logo {
+.reveal section img.brand-logo,
+.reveal section img.logo-google-amp {
   background: none;
   border: none;
   box-shadow: none; }
+
+mark {
+  background-color: rgba(255, 255, 0, 0.5); }
 
 .reveal .slide-background {
   background-color: #2C2C2C; }

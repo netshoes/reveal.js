@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<title>reveal.js</title>
+		<title>{Netshoes}.googleAmp()</title>
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
 		<link rel="stylesheet" href="lib/css/zenburn.css"><!-- Theme used for syntax highlighting of code -->
@@ -23,7 +23,75 @@
 				<section>
 					<img data-src="img/logo.svg" class="brand-logo">
 				</section>
-				<section>Slide 2</section>
+				<section>
+					<section>
+						<img data-src="img/logo-google-amp.svg" class="logo-google-amp">
+					</section>
+					<section>
+						<h1>Afinal, o que é Google Amp?</h1>
+					</section>
+					<section>
+						<p>O projeto AMP é uma iniciativa de código aberto com o objetivo de criar uma Web melhor para todos. O projeto possibilita a criação de websites e anúncios rápidos, atraentes e de alto desempenho em vários dispositivos e plataformas de distribuição.</p>
+					</section>
+					<section>
+						<p>Modelo de HTML para AMP</p>
+						<pre>
+							<code data-trim data-noescape>
+								&lt;!doctype html&gt;
+								<mark>&lt;html ⚡&gt;</mark>
+								&lt;head&gt;
+								 &lt;meta charset=&quot;utf-8&quot;&gt;
+								 &lt;script async src=&quot;https://cdn.ampproject.org/v0.js&quot;&gt;&lt;/script&gt;
+								 &lt;title&gt;Hello AMP world&lt;/title&gt;
+								 &lt;link rel=&quot;canonical&quot; href=&quot;hello-world.html&quot;&gt;
+								 &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,minimum-scale=1,initial-scale=1&quot;&gt;
+								 &lt;style amp-boilerplate&gt;body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}&lt;/style&gt;&lt;noscript&gt;&lt;style amp-boilerplate&gt;body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}&lt;/style&gt;&lt;/noscript&gt;
+								&lt;/head&gt;
+								&lt;body&gt;
+								 &lt;h1&gt;Hello AMP World!&lt;/h1&gt;
+								&lt;/body&gt;
+								&lt;/html&gt;
+							</code>
+						</pre>
+					</section>
+					<section>
+						<p>Adcionando componentes à sua página AMP</p>
+						<pre>
+							<code data-trim data-noescape>
+								&lt;amp-img src=&quot;https://www.ampproject.org/examples/images/amp.jpg&quot;
+  							width=&quot;900&quot; height=&quot;508&quot; layout=&quot;responsive&quot;&gt;&lt;/amp-img&gt;
+							</code>
+
+							<code data-trim data-noescape>
+								&lt;!-- este script &eacute; obrigat&oacute;rio para amp-youtube e deve estar na se&ccedil;&atilde;o &lt;head&gt; --&gt;
+								&lt;script async custom-element=&quot;amp-youtube&quot;
+								 src=&quot;https://cdn.ampproject.org/v0/amp-youtube-0.1.js&quot;&gt;&lt;/script&gt;
+
+								&hellip;
+
+								&lt;amp-youtube data-videoid=&quot;9Cfxm7cikMY&quot;
+								 layout=&quot;responsive&quot; width=&quot;480&quot; height=&quot;270&quot;&gt;&lt;/amp-youtube&gt;
+							</code>
+						</pre>
+					</section>
+					<section>
+						<h2>Marcação obrigatória</h2>
+						<ol>
+							<li>Ser iniciados pelo doctype &lt;!doctype html&gt;.</li>
+							<li>Conter uma tag &lt;html ⚡&gt; de n&iacute;vel superior (&lt;html amp&gt; tamb&eacute;m &eacute; aceita).</li>
+							<li>Conter as tags &lt;head&gt; e &lt;body&gt; (elas s&atilde;o opcionais em HTML).</li>
+							<li>Conter uma tag &lt;link rel=&quot;canonical&quot; href=&quot;$SOME_URL&quot;&gt; dentro do cabe&ccedil;alho que aponte para a vers&atilde;o em HTML comum do documento em AMP HTML, ou para o pr&oacute;prio documento se a vers&atilde;o em HTML n&atilde;o existir.</li>
+							<li>Conter uma tag &lt;meta charset=&quot;utf-8&quot;&gt; como primeira filha da tag do cabe&ccedil;alho.</li>
+							<li>Conter uma tag &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,minimum-scale=1&quot;&gt;dentro da tag do cabe&ccedil;alho. Tamb&eacute;m &eacute; recomend&aacute;vel incluir initial-scale=1.</li>
+							<li>Conter uma tag &lt;script async src=&quot;https://cdn.ampproject.org/v0.js&quot;&gt;&lt;/script&gt; como o &uacute;ltimo elemento do cabe&ccedil;alho (isso inclui e carrega a biblioteca de AMP JS).</li>
+							<li>Conter o seguinte na tag &lt;head&gt;: &lt;style amp-boilerplate&gt;body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}&lt;/style&gt;&lt;noscript&gt;&lt;style amp-boilerplate&gt;body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}&lt;/style&gt;&lt;/noscript&gt;</li>
+						</ol>
+					</section>
+				</section>
+
+
+
+
 				<section>Slide 3</section>
 				<section>Slide 3</section>
 			</div>
