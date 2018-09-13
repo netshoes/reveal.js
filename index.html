@@ -38,13 +38,13 @@
 						<p style="font-size:1rem">A velocidade de uma página da Web melhora a experiência do usuário e as <a href="https://www.doubleclickbygoogle.com/articles/mobile-speed-matters/">principais métricas de negócios</a>. As páginas AMP são carregadas quase instantaneamente. Isso permite oferecer uma experiência rápida e consistente em todos os dispositivos e plataformas com links para páginas AMP, incluindo Google, Bing, LinkedIn e muito mais. Esses ganhos de desempenho geralmente causam melhorias em valores importantes, como o tempo gasto na página, as visitas de retorno e a CTR.</p>
 					</section>
 					<section>
-						<h2>Como?</h2>
+						<h2>Como AMP melhoraria a experiência de meus clientes?</h2>
 						<ul>
 							<li title="Geralmente, as páginas AMP são carregadas em menos de um segundo">Mantenha sua audiência engajada</li>
 							<li title="As conversões caem 12% para cada segundo extra que uma página leva para carregar">Maximize sua receita</li>
 							<li title="A adoção do formato AMP permite que você mantenha sua própria marca e suas ferramentas">Mantenha a flexibilidade e o controle</li>
 							<li title="Criar páginas AMP é simples e direto">Reduza a complexidade nas suas operaões</li>
-							<li title="As páginas AMP podem ser construídas uma vez e distribuídas em uma ampla variedade de plataformas de distribuição simultaneamente.">Maximize sei ROI</li>
+							<li title="As páginas AMP podem ser construídas uma vez e distribuídas em uma ampla variedade de plataformas de distribuição simultaneamente.">Maximize seu ROI</li>
 							<li title="O projeto AMP é uma iniciativa de código aberto para proteger o futuro da Web ao ajudar todos os sites a oferecer uma experiência do usuário melhor e mais rápida.">Desenvolva para um futuro sustentável</li>
 						</ul>
 					</section>
@@ -70,7 +70,7 @@
 						</pre>
 					</section>
 					<section>
-						<p>Adcionando componentes à sua página AMP</p>
+						<p>Adicionando componentes à sua página AMP</p>
 						<pre>
 							<code data-trim data-noescape>
 								&lt;amp-img src=&quot;https://www.ampproject.org/examples/images/amp.jpg&quot;
@@ -141,20 +141,62 @@
 					<section>
 						<p>O estilo e o layout nas páginas AMP em HTML são muito semelhantes aos de páginas HTML normais. Nos dois casos, você usará CSS.</p>
 					</section>
+					<section>
+						<p>Adicione todos os CSS dentro de uma tag &lt;style amp-custom&gt; no cabeçalho do documento. Por exemplo:</p>
+						<pre>
+							<code data-trim data-noescape>
+							 &lt;head&gt;
+								&lt;style amp-custom&gt;
+								 body { background-color: white; }
+								 amp-img { border: 5px solid black; }
+								 amp-img.grey-placeholder { background-color: grey; }
+								&lt;/style&gt;
+							 &lt;/head&gt;
+							</code>
+						</pre>
+					</section>
+					<section>
+						<aside class="important">IMPORTANTE — Sua página pode ter somente uma tag &lt;style amp-custom&gt;, pois não é permitido ter mais de uma nas AMP.</aside>
+					</section>
+					<section>
+						<p>Defina os estilos de componentes com seletores de classe ou elemento usando propriedades CSS comuns. Por exemplo:</p>
+						<pre>
+							<code data-trim data-noescape>
+							 &lt;amp-img
+								class=&quot;grey-placeholder&quot;
+								src=&quot;https://placekitten.com/g/500/300&quot;
+								srcset=&quot;/img/cat.jpg 640w, /img/kitten.jpg 320w&quot;
+								width=&quot;500&quot; height=&quot;300&quot; layout=&quot;responsive&quot;&gt;
+							 &lt;/amp-img&gt;
+							</code>
+						</pre>
+					</section>
+					<section>
+						<h2>Componentes existentes</h2>
+						<a href="https://www.ampproject.org/pt_br/docs/reference/components" target="_blank">Lista</a>
+					</section>
+					<section>
+						<h2>Ferramentas</h2>
+						<ul>
+							<li><a href="https://validator.ampproject.org" target="_blank">AMP Validator</a></li>
+							<li><a href="https://ampbyexample.com" target="_blank">AMP By Example</a></li>
+							<li><a href="https://ampbyexample.com/playground/" target="_blank">AMP Playground</a></li>
+							<li><a href="https://www.ampstart.com" target="_blank">AMP Start</a></li>
+							<li><a href="https://cdn.ampproject.org/experiments.html" target="_blank">AMP Experiments</a></li>
+							<li><a href="https://github.com/ampproject/amp-toolbox" target="_blank">AMP Toolbox</a></li>
+						</ul>
+					</section>
 				</section>
 				<section>
 					<h2>Tendências</h2>
 					<a href="https://www.ampproject.org/pt_br/stories/">AMP stories</a>
 				</section>
-
-
 				<section>
 					<h2>Links úteis</h2>
 					<ul>
-						<li><a href="https://developers.google.com/web/tools/setup/">Fundamentos</a></li>
+						<li><a href="https://www.ampproject.org/pt_br/">Link do projeto</a></li>
 						<li><a href="https://www.ampproject.org/pt_br/learn/showcases/">Showcase</a></li>
 						<li><a href="https://www.ampproject.org/pt_br/learn/case-studies/">Casos de sucesso</a></li>
-						<li><a href="https://validator.ampproject.org/">Validator</a></li>
 					</ul>
 				</section>
 				<section>Slide 3</section>

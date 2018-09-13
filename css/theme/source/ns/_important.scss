@@ -1,0 +1,23 @@
+.reveal aside.important {
+  display: block;
+  font-size: 14px;
+  padding: 24px 24px 24px 80px;
+  position: relative;
+  background: #fff6f6;
+  color: #ff5252;
+
+  &::before {
+    float: left;
+    word-wrap: normal;
+    white-space: nowrap;
+    margin-left: -36px;
+    content: '';
+    height: 70px;
+    left: 44px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70px;
+    background: url('https://www.ampproject.org/static/img/docs/icon_important.svg') center/cover no-repeat;
+  }
+}
