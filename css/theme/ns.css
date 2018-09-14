@@ -60,6 +60,59 @@ mark {
     width: 70px;
     background: url("https://www.ampproject.org/static/img/docs/icon_important.svg") center/cover no-repeat; }
 
+.reveal ul.ns-blocks {
+  margin: 0 auto;
+  width: 600px;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around; }
+  .reveal ul.ns-blocks li {
+    padding: 0;
+    margin: 0;
+    width: 150px;
+    height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center; }
+    .reveal ul.ns-blocks li span, .reveal ul.ns-blocks li strong {
+      display: block; }
+    .reveal ul.ns-blocks li span {
+      margin-top: 56px;
+      font-size: .8rem; }
+  .reveal ul.ns-blocks li:nth-child(1) {
+    background-color: #c40063;
+    transform: matrix(0.99, -0.14, -0.05, 1.04, 0, 0); }
+  .reveal ul.ns-blocks li:nth-child(2) {
+    background-color: #d05d27;
+    transform: matrix(1.01, 0.14, -0.05, 1.1, 0, 4); }
+  .reveal ul.ns-blocks li:nth-child(3) {
+    background-color: #4d2874;
+    transform: matrix(0.99, -0.14, -0.05, 1.04, 0, 0); }
+  .reveal ul.ns-blocks li:nth-child(4) {
+    background-color: #a1ba3a;
+    transform: matrix(1.01, 0.14, -0.05, 1.1, 0, 5); }
+  .reveal ul.ns-blocks li:nth-child(5) {
+    background-color: #e6bb20;
+    transform: matrix(0.99, -0.14, 0, 1.1, -4, 11); }
+  .reveal ul.ns-blocks li:nth-child(6) {
+    background-color: #4d2874;
+    transform: matrix(1.01, 0.14, -0.05, 1.1, -8, 12); }
+  .reveal ul.ns-blocks li:nth-child(7) {
+    background-color: #a1ba3a;
+    transform: matrix(0.99, -0.14, -0.05, 1.1, -8, 11); }
+    .reveal ul.ns-blocks li:nth-child(7) strong {
+      font-size: .9rem; }
+  .reveal ul.ns-blocks li:nth-child(8) {
+    background-color: #ca5a26;
+    transform: matrix(1.03, 0.14, -0.05, 1.1, -8, 14); }
+
 .reveal .slide-background {
   background-color: #2C2C2C; }
 
