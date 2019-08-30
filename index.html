@@ -3,11 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<title>{Netshoes}.googleAmp()</title>
+		<title>{Netshoes}.next()</title>
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
 		<link rel="stylesheet" href="lib/css/zenburn.css"><!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="css/theme/ns.css"><!-- Netshoes styles -->
+		<link rel="stylesheet" href="css/components/ns-cronogram.css"><!-- Netshoes Cronogram styles -->
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
@@ -20,210 +21,126 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
+
 				<section>
 					<img data-src="img/logo.svg" class="brand-logo">
 				</section>
+
 				<section>
 					<section>
-						<img data-src="img/logo-google-amp.svg" class="logo-google-amp">
+						Projeto <strong>NEXT</strong>
 					</section>
 					<section>
-						<h1>Afinal, o que é Google Amp?</h1>
+						<h1>O que é</h1>
 					</section>
 					<section>
-						<p>O projeto AMP é uma iniciativa de código aberto com o objetivo de criar uma Web melhor para todos. O projeto possibilita a criação de websites e anúncios rápidos, atraentes e de alto desempenho em vários dispositivos e plataformas de distribuição.</p>
+						<p>Tem o objetivo da separação da webstore, que hoje é um grande projeto em diversos módulos para assim, melhorarmos a performance do processo de deploy, este que hoje demora em média 45min.</p>
 					</section>
 					<section>
-						<h2>Mas por quê usar AMP?</h2>
-						<p style="font-size:1rem">A velocidade de uma página da Web melhora a experiência do usuário e as <a href="https://www.doubleclickbygoogle.com/articles/mobile-speed-matters/">principais métricas de negócios</a>. As páginas AMP são carregadas quase instantaneamente. Isso permite oferecer uma experiência rápida e consistente em todos os dispositivos e plataformas com links para páginas AMP, incluindo Google, Bing, LinkedIn e muito mais. Esses ganhos de desempenho geralmente causam melhorias em valores importantes, como o tempo gasto na página, as visitas de retorno e a CTR.</p>
+						<h2>Mas por quê?</h2>
+						<p style="font-size:1rem">Temos muito potencial de melhorarmos ainda mais o processo fabril e a performance do site com essas mudanças.</p>
 					</section>
 					<section>
-						<h2>Como AMP melhoraria a experiência de meus clientes?</h2>
-						<ul>
-							<li title="Geralmente, as páginas AMP são carregadas em menos de um segundo">Mantenha sua audiência engajada</li>
-							<li title="As conversões caem 12% para cada segundo extra que uma página leva para carregar">Maximize sua receita</li>
-							<li title="A adoção do formato AMP permite que você mantenha sua própria marca e suas ferramentas">Mantenha a flexibilidade e o controle</li>
-							<li title="Criar páginas AMP é simples e direto">Reduza a complexidade nas suas operaões</li>
-							<li title="As páginas AMP podem ser construídas uma vez e distribuídas em uma ampla variedade de plataformas de distribuição simultaneamente.">Maximize seu ROI</li>
-							<li title="O projeto AMP é uma iniciativa de código aberto para proteger o futuro da Web ao ajudar todos os sites a oferecer uma experiência do usuário melhor e mais rápida.">Desenvolva para um futuro sustentável</li>
+						<h2 style="font-size:3rem">Problemas? Sempre existem.</h2>
+						<ul style="font-size:2rem">
+							<li>Existem regras congruentes em diversos módulos;</li>
+							<li>Componentes de layout principal como o header e footer;</li>
+							<li>Iremos usar diversas tecnologias no front? Isso multiplica os componentes acima;</li>
+							<li>Ainda estamos numa fase inicial do webstore-router e temos que ajustar algumas coisas;</li>
+							<li>Precisamos ainda analisar o desempenho;</li>
+							<li>Webstore-router: Container vs Virtualização;</li>
+							<li>Time engajado.</li>
 						</ul>
 					</section>
 					<section>
-						<p>Modelo de HTML para AMP</p>
-						<pre>
-							<code data-trim data-noescape>
-								&lt;!doctype html&gt;
-								<mark>&lt;html ⚡&gt;</mark>
-								&lt;head&gt;
-								 &lt;meta charset=&quot;utf-8&quot;&gt;
-								 &lt;script async src=&quot;https://cdn.ampproject.org/v0.js&quot;&gt;&lt;/script&gt;
-								 &lt;title&gt;Hello AMP world&lt;/title&gt;
-								 &lt;link rel=&quot;canonical&quot; href=&quot;hello-world.html&quot;&gt;
-								 &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,minimum-scale=1,initial-scale=1&quot;&gt;
-								 &lt;style amp-boilerplate&gt;body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}&lt;/style&gt;&lt;noscript&gt;&lt;style amp-boilerplate&gt;body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}&lt;/style&gt;&lt;/noscript&gt;
-								&lt;/head&gt;
-								&lt;body&gt;
-								 &lt;h1&gt;Hello AMP World!&lt;/h1&gt;
-								&lt;/body&gt;
-								&lt;/html&gt;
-							</code>
-						</pre>
-					</section>
-					<section>
-						<p>Adicionando componentes à sua página AMP</p>
-						<pre>
-							<code data-trim data-noescape>
-								&lt;amp-img src=&quot;https://www.ampproject.org/examples/images/amp.jpg&quot;
-  							width=&quot;900&quot; height=&quot;508&quot; layout=&quot;responsive&quot;&gt;&lt;/amp-img&gt;
-							</code>
-
-							<code data-trim data-noescape>
-								&lt;!-- este script &eacute; obrigat&oacute;rio para amp-youtube e deve estar na se&ccedil;&atilde;o &lt;head&gt; --&gt;
-								&lt;script async custom-element=&quot;amp-youtube&quot;
-								 src=&quot;https://cdn.ampproject.org/v0/amp-youtube-0.1.js&quot;&gt;&lt;/script&gt;
-
-								&hellip;
-
-								&lt;amp-youtube data-videoid=&quot;9Cfxm7cikMY&quot;
-								 layout=&quot;responsive&quot; width=&quot;480&quot; height=&quot;270&quot;&gt;&lt;/amp-youtube&gt;
-							</code>
-						</pre>
-					</section>
-					<section>
-						<h2>Marcação obrigatória</h2>
-						<ol style="font-size:1rem;">
-							<li>Ser iniciados pelo doctype &lt;!doctype html&gt;.</li>
-							<li>Conter uma tag &lt;html ⚡&gt; de n&iacute;vel superior (&lt;html amp&gt; tamb&eacute;m &eacute; aceita).</li>
-							<li>Conter as tags &lt;head&gt; e &lt;body&gt; (elas s&atilde;o opcionais em HTML).</li>
-							<li>Conter uma tag &lt;link rel=&quot;canonical&quot; href=&quot;$SOME_URL&quot;&gt; dentro do cabe&ccedil;alho que aponte para a vers&atilde;o em HTML comum do documento em AMP HTML, ou para o pr&oacute;prio documento se a vers&atilde;o em HTML n&atilde;o existir.</li>
-							<li>Conter uma tag &lt;meta charset=&quot;utf-8&quot;&gt; como primeira filha da tag do cabe&ccedil;alho.</li>
-							<li>Conter uma tag &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,minimum-scale=1&quot;&gt;dentro da tag do cabe&ccedil;alho. Tamb&eacute;m &eacute; recomend&aacute;vel incluir initial-scale=1.</li>
-							<li>Conter uma tag &lt;script async src=&quot;https://cdn.ampproject.org/v0.js&quot;&gt;&lt;/script&gt; como o &uacute;ltimo elemento do cabe&ccedil;alho (isso inclui e carrega a biblioteca de AMP JS).</li>
-							<li>Conter o seguinte na tag &lt;head&gt;: &lt;style amp-boilerplate&gt;body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}&lt;/style&gt;&lt;noscript&gt;&lt;style amp-boilerplate&gt;body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}&lt;/style&gt;&lt;/noscript&gt;</li>
-						</ol>
-					</section>
-				</section>
-				<section>
-					<section>
-						<p>A Sociomantic, empresa alemã líder mundial em soluções de mídia programática, preparou um infográfico reunindo informações sobre o m-commerce – o mercado mobile – no Brasil.</p>
-					</section>
-					<section>
-						<ul style="font-size:1rem;">
-							<li>Penetração de smartphones no Brasil subiu de 53% em 2013 para 90% em 2015;</li>
-							<li>Android é o sistema mais utilizado, com uma fatia de 78% do mercado;</li>
-							<li>47% das pessoas navegam diariamente na internet via dispositivos mobile;</li>
-							<li>79% de todo tráfego da internet acontece em dispositivos móveis;</li>
-							<li>O valor gasto em m-commerce subiu de R$ 13.2 bilhões em 2014 para R$ 27.3 bilhões em 2015;</li>
-							<li>Campanhas in-app entregam uma taxa de conversão 70% maior e 50% mais vendas do que campanhas web mobile;</li>
-							<li>12% do total de compras online em 2015 foram feitas pelo celular;</li>
-							<li>As três categorias mais compradas em dispositivos móveis são: eletrônicos, roupas e acessórios;</li>
-							<li>67% dos brasileiros usuários de smartphone já compraram via dispositivos móveis;</li>
-							<li>50% dos e-commerces no Brasil não possuem um app exclusivo;</li>
-							<li>24% dos consumidores usaram apps para realizar uma compra;</li>
-							<li>80% de apps baixados são usados somente uma vez;</li>
-							<li>25% dos apps baixados nunca são usados;</li>
-							<li>A média de aplicativos instalados é de 20 por pessoa;</li>
+						<h2 style="font-size:3rem">Mas vejamos as oportunidades:</h2>
+						<ul style="font-size:2rem">
+							<li>A migração será organizada por módulos, assim poderemos ter um melhor controle;</li>
+							<li>Teremos a grande oportunidade de mudarmos a nossa stack do frontend para diversas tecnologias. Totalmente apartadas;</li>
+							<li>Oportundiade de equalizarmos os gastos com infra-estrutura por módulo;</li>
+							<li>Manteremos a flexibilidade e o controle por módulos;</li>
+							<li>Reduza a complexidade do código;</li>
+							<li>Retomaremos com mais gás no desenvolvimento;</li>
+							<li>Desenvolveremos para um futuro sustentável.</li>
 						</ul>
 					</section>
 				</section>
+
 				<section>
 					<section>
-						<h2>SEO</h2>
+						<p>Preparamos um esboço de um cronograma</p>
 					</section>
 					<section>
-						<h3>Páginas vinculadas com um link&lt;&gt;</h3>
-						<p>Adicione o seguinte à página não AMP:</p>
-						<pre>
-							<code data-trim data-noescape>
-							 &lt;link rel=&quot;amphtml&quot; href=&quot;https://www.example.com/url/to/amp/document.html&quot;&gt;
-							</code>
-						</pre>
-					</section>
-					<section>
-						<p>Adicione isto à página AMP:</p>
-						<pre>
-							<code data-trim data-noescape>
-							 &lt;link rel=&quot;canonical&quot; href=&quot;https://www.example.com/url/to/full/document.html&quot;&gt;
-							</code>
-						</pre>
-					</section>
-					<section>
-						<h3>E se eu só tiver uma página?</h3>
-						<p>Se você só tiver uma página, e essa página for AMP, ainda assim deverá adicionar o link canônico a ela, mas ele simplesmente apontará para a própria página:</p>
-						<pre>
-							<code data-trim data-noescape>
-							 &lt;link rel=&quot;canonical&quot; href=&quot;https://www.example.com/url/to/amp/document.html&quot;&gt;
-							</code>
-						</pre>
+						<table class="ns-cronogram">
+							<tr>
+								<th class="day-name">Sun</th>
+								<th class="day-name">Mon</th>
+								<th class="day-name">Tue</th>
+								<th class="day-name">Wed</th>
+								<th class="day-name">Thu</th>
+								<th class="day-name">Fri</th>
+								<th class="day-name">Sat</th>
+							</tr>
+							<tr>
+								<td class="day"><span class="number">31</span></td>
+								<td class="day"><span class="number">1</span><span class="event"></span><span class="event"></span></td>
+								<td class="day"><span class="number">2</span></td>
+								<td class="day"><span class="number">3</span><span class="event event-multiday-start"></span></td>
+								<td class="day"><span class="number">4</span><span class="event event-multiday"></span><span class="event event-multiday-start eventclass" style="background-color:#5a9ab2;"></span><span class="event"></td>
+								<td class="day"><span class="number">5</span><span class="event event-multiday-finish"></span><span class="event event-multiday eventclass" style="background-color:#5a9ab2;"></span></td>
+								<td class="day"><span class="number">6</span><span class="event event-ghost"></span><span class="event event-multiday-finish eventclass" style="background-color:#5a9ab2;"></span></td>
+							</tr>
+							<tr>
+								<td class="day"><span class="number">7</span></td>
+								<td class="day"><span class="number">8</span><span class="event"></span></td>
+								<td class="day"><span class="number">9</span></td>
+								<td class="day"><span class="number">10</span></td>
+								<td class="day"><span class="number">11</span></td>
+								<td class="day"><span class="number">12</span></td>
+								<td class="day"><span class="number">13</span></td>
+							</tr>
+							<tr>
+								<td class="day"><span class="number">14</span></td>
+								<td class="day"><span class="number">15</span></td>
+								<td class="day"><span class="number">16</span><span class="event"></span></td>
+								<td class="day"><span class="number">17</span><span class="event"></span></td>
+								<td class="day"><span class="number">18</span></td>
+								<td class="day"><span class="number">19</span></td>
+								<td class="day"><span class="number">20</span></td>
+							</tr>
+							<tr>
+								<td class="day"><span class="number">21</span></td>
+								<td class="day"><span class="number">22</span></td>
+								<td class="day"><span class="number">23</span></td>
+								<td class="day"><span class="number">24</span></td>
+								<td class="day"><span class="number">25</span></td>
+								<td class="day"><span class="number">26</span></td>
+								<td class="day"><span class="number">27</span><span class="event event-multiday-start" style="background-color:#da5f5f;"></td>
+							</tr>
+							<tr>
+								<td class="day"><span class="number">28</span><span class="event event-multiday" style="background-color:#da5f5f;"></td>
+								<td class="day today"><span class="number">29</span><span class="event event-multiday-finish" style="background-color:#da5f5f;"></td>
+								<td class="day"><span class="number">30</span></td>
+								<td class="day"><span class="number">1</span></td>
+								<td class="day"><span class="number">2</span></td>
+								<td class="day"><span class="number">3</span></td>
+								<td class="day"><span class="number">4</span></td>
+							</tr>
+							<tr>
+								<td class="day"><span class="number">5</span></td>
+								<td class="day"><span class="number">6</span><span class="event"></span></td>
+								<td class="day"><span class="number">7</span></td>
+								<td class="day"><span class="number">8</span></td>
+								<td class="day"><span class="number">9</span></td>
+								<td class="day"><span class="number">10</span></td>
+								<td class="day"><span class="number">11</span></td>
+							</tr>
+						</table>
 					</section>
 				</section>
-				<section>
-					<section>
-						<h2>Estilizando os componentes</h2>
-					</section>
-					<section>
-						<p>O estilo e o layout nas páginas AMP em HTML são muito semelhantes aos de páginas HTML normais. Nos dois casos, você usará CSS.</p>
-					</section>
-					<section>
-						<p>Adicione todos os CSS dentro de uma tag &lt;style amp-custom&gt; no cabeçalho do documento. Por exemplo:</p>
-						<pre>
-							<code data-trim data-noescape>
-							 &lt;head&gt;
-								&lt;style amp-custom&gt;
-								 body { background-color: white; }
-								 amp-img { border: 5px solid black; }
-								 amp-img.grey-placeholder { background-color: grey; }
-								&lt;/style&gt;
-							 &lt;/head&gt;
-							</code>
-						</pre>
-					</section>
-					<section>
-						<aside class="important">IMPORTANTE — Sua página pode ter somente uma tag &lt;style amp-custom&gt;, pois não é permitido ter mais de uma nas AMP.</aside>
-					</section>
-					<section>
-						<p>Defina os estilos de componentes com seletores de classe ou elemento usando propriedades CSS comuns. Por exemplo:</p>
-						<pre>
-							<code data-trim data-noescape>
-							 &lt;amp-img
-								class=&quot;grey-placeholder&quot;
-								src=&quot;https://placekitten.com/g/500/300&quot;
-								srcset=&quot;/img/cat.jpg 640w, /img/kitten.jpg 320w&quot;
-								width=&quot;500&quot; height=&quot;300&quot; layout=&quot;responsive&quot;&gt;
-							 &lt;/amp-img&gt;
-							</code>
-						</pre>
-					</section>
-					<section>
-						<h2>Componentes existentes</h2>
-						<a href="https://www.ampproject.org/pt_br/docs/reference/components" target="_blank">Lista</a>
-					</section>
-					<section>
-						<h2>Ferramentas</h2>
-						<ul>
-							<li><a href="https://validator.ampproject.org" target="_blank">AMP Validator</a></li>
-							<li><a href="https://ampbyexample.com" target="_blank">AMP By Example</a></li>
-							<li><a href="https://ampbyexample.com/playground/" target="_blank">AMP Playground</a></li>
-							<li><a href="https://www.ampstart.com" target="_blank">AMP Start</a></li>
-							<li><a href="https://cdn.ampproject.org/experiments.html" target="_blank">AMP Experiments</a></li>
-							<li><a href="https://github.com/ampproject/amp-toolbox" target="_blank">AMP Toolbox</a></li>
-						</ul>
-					</section>
-				</section>
-				<section>
-					<h2>Tendências</h2>
-					<a href="https://www.ampproject.org/pt_br/stories/">AMP stories</a>
-				</section>
-				<section>
-					<h2>Links úteis</h2>
-					<ul>
-						<li><a href="https://www.ampproject.org/pt_br/">Link do projeto</a></li>
-						<li><a href="https://www.ampproject.org/pt_br/learn/showcases/">Showcase</a></li>
-						<li><a href="https://www.ampproject.org/pt_br/learn/case-studies/">Casos de sucesso</a></li>
-						<li><a href="https://digitalks.com.br/noticias/sociomantic-lanca-infografico-sobre-mercado-mobile-brasileiro/">Dados da Sociomantic</a></li>
-					</ul>
-				</section>
+
 				<section>Obrigado</section>
+
 				<section>
 					<ul class="ns-blocks">
 						<li>
@@ -260,6 +177,7 @@
 						</li>
 					</ul>
 				</section>
+
 			</div>
 		</div>
 		<div class="ns-strips"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>

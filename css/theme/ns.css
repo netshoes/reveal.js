@@ -1,3 +1,21 @@
+@font-face {
+	font-family: netshoes_displaybold;
+	src: url(https://static.netshoes.com.br/latest/netshoesbr/fonts/netshoesdisplay-bold-webfont.eot);
+  src: url(https://static.netshoes.com.brhttps://static.netshoes.com.br/latest/netshoesbr/fonts/netshoesdisplay-bold-webfont.eot?#iefix) format("eot"),
+       url(https://static.netshoes.com.br/latest/netshoesbr/fonts/netshoesdisplay-bold-webfont.woff) format("woff"),
+       url(https://static.netshoes.com.br/latest/netshoesbr/fonts/netshoesdisplay-bold-webfont.ttf) format("truetype"),
+       url(https://static.netshoes.com.br/latest/netshoesbr/fonts/netshoesdisplay-bold-webfont.svg#netshoes_displaybold) format("svg")
+}
+
+@font-face {
+	font-family: netshoes_displayblack;
+	src: url(https://static.netshoes.com.br/latest/netshoesbr/fonts/netshoesdisplay-black-webfont.eot);
+  src: url(https://static.netshoes.com.br/latest/netshoesbr/fonts/netshoesdisplay-black-webfont.eot?#iefix) format("eot"),
+       url(https://static.netshoes.com.br/latest/netshoesbr/fonts/netshoesdisplay-black-webfont.woff) format("woff"),
+       url(https://static.netshoes.com.br/latest/netshoesbr/fonts/netshoesdisplay-black-webfont.ttf) format("truetype"),
+       url(https://static.netshoes.com.br/latest/netshoesbr/fonts/netshoesdisplay-black-webfont.svg#netshoes_displayblack) format("svg")
+}
+
 .ns-strips {
   display: flex;
   position: fixed;
