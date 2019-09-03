@@ -37,8 +37,9 @@
   font-size: 14px;
   padding: 1.5% 1.5% 5%;
   vertical-align: initial;
-  padding: 1.5% 0 ;
+  padding: 1.5% 0;
   height: 60px;
+  position: relative;
 }
 
 /* .reveal table.ns-cronogram .day:hover {
@@ -68,18 +69,23 @@
   background-color: #91c33b;
   color: black;
   padding-left: 5px;
+  position: absolute;
+  width: 76%;
 }
 
 .reveal table.ns-cronogram span.event-multiday {
-  margin: 5px -1px;
+  margin: 5px -3px;
   border-radius: 0;
+  width: 99%;
 }
 .reveal table.ns-cronogram span.event-multiday-start {
   margin-right: -4px;
+  width: 99%;
 }
 
 .reveal table.ns-cronogram span.event-multiday-finish {
   margin-left: -4px;
+  width: 89%;
 }
 
 .reveal table.ns-cronogram span.event-ghost {
