@@ -68,6 +68,10 @@
   font-size: 0.6rem;
 }
 
+.reveal table.ns-cronogram span.event.opacity {
+  background-color: #465036;
+}
+
 .reveal table.ns-cronogram span.event-multiday {
   margin: 5px 0 -3px 0;
   border-radius: 0;
