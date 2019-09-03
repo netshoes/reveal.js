@@ -8,9 +8,9 @@
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
-.reveal table.ns-cronogram caption {
-  /* font-size: .6rem; */
-}
+/* .reveal table.ns-cronogram caption {
+  font-size: .6rem;
+} */
 
 .reveal table.ns-cronogram th, .reveal table.ns-cronogram td {
   border: 1px solid rgba(255,255,255,0.1);
@@ -21,7 +21,7 @@
   text-transform: uppercase;
   font-size: 10px;
   font-weight: 700;
-  padding: 10px 0;
+  padding: 5px 0;
   color: rgba(255,255,255,0.5);
   background-color: #292929;
   letter-spacing: 1px;
@@ -35,17 +35,11 @@
   color: rgba(255,255,255,0.6);
   font-weight: 400;
   font-size: 14px;
-  padding: 1.5% 1.5% 5%;
   vertical-align: initial;
-  padding: 1.5% 0;
-  height: 60px;
+  padding: 5px 0;
+  height: 42px;
   position: relative;
 }
-
-/* .reveal table.ns-cronogram .day:hover {
-  background-color: rgba(0,0,0,0.1);
-  cursor:pointer;
-} */
 
 .reveal table.ns-cronogram .today {
   color: #FFF;
@@ -53,7 +47,7 @@
 }
 
 .reveal table.ns-cronogram span.number {
-  margin-left: 10%
+  margin-left: 5px;
 }
 
 .reveal table.ns-cronogram span.number.opacity {
@@ -61,7 +55,7 @@
 }
 
 .reveal table.ns-cronogram span.event {
-  height: 18px;
+  height: 11px;
   background-color: rgba(0,0,0,.3);
   display: block;
   margin: 5px 10%;
@@ -71,6 +65,7 @@
   padding-left: 5px;
   position: absolute;
   width: 76%;
+  font-size: 0.6rem;
 }
 
 .reveal table.ns-cronogram span.event-multiday {
@@ -78,6 +73,7 @@
   border-radius: 0;
   width: 99%;
 }
+
 .reveal table.ns-cronogram span.event-multiday-start {
   margin-right: -4px;
   width: 99%;
@@ -90,4 +86,12 @@
 
 .reveal table.ns-cronogram span.event-ghost {
   background-color: transparent;
+}
+
+.ns-cronogram-summary {
+  width: 100%;
+}
+
+.ns-cronogram-summary li {
+  font-size: 1rem;
 }
